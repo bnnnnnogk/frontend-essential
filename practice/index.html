@@ -3,59 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
     <nav>
       <p>Cleverse Academy</p>
       <button>Login</button>
     </nav>
-
     <h1>Hello, World</h1>
-
     <h2>This is heading 2</h2>
-
-    <p>This is paragraph</p>
-
-    <hr />
-
+    <p>This is a paragraph</p>
     <div class="milestone-container">
       <div class="milestone-card">
-        <h2>Fronend Milestones!</h2>
-        <ol>
-          <li>JavaScript</li>
+        <h2>Frontend Milestones!</h2>
+        <ul id="frontend-milestone">
+          <!-- <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS</li>
-          <li>React</li>
-        </ol>
-        <a href="#">view course info</a>
+          <li>React</li> -->
+        </ul>
+        <a href="https://academy.cleverse.com/">view course info</a>
       </div>
       <div class="milestone-card">
         <h2>Backend Milestones!</h2>
-        <ol>
+        <ul id="backend-milestone">
           <li>Node.js</li>
           <li>Express</li>
           <li>Database</li>
           <li>Docker</li>
-        </ol>
-        <a href="#">view course info</a>
+        </ul>
+        <a href="https://academy.cleverse.com/">view course info</a>
       </div>
     </div>
-
     <hr />
-    <p>form</p>
-    <form action="">
-      <label for="username">Username</label>
-      <input type="text" id="username" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" required />
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" required />
-
-      <button type="submit">Login</button>
+    <p>Form</p>
+    <form>
+      <label for="frontend">Add Front-end Milestone:</label>
+      <input type="text" id="frontend" />
+      <button id="add-front">Submit</button>
     </form>
+    <br />
+    <div class="row">
+      <label for="input-box">Add Back-end Milestone:</label>
+      <input type="text" id="input-box" placeholder="Add your text" />
+      <button onclick="addTask()">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
